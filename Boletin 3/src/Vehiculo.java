@@ -22,7 +22,16 @@ public class Vehiculo {
 		System.out.println("matricula: "+matricula);
 		System.out.println("tipo: "+tipo);
 		System.out.println("velocidad maxima: "+velocidadMaxima);
-		System.out.println(conductor.toString());
+		System.out.println(conductor);
+	}
+	
+	public Vehiculo(String matricula, String tipo, int velocidadMaxima) {
+		this.matricula=matricula;
+		this.tipo=tipo;
+		this.velocidadMaxima=velocidadMaxima;
+	}
+	public Vehiculo() {
+		
 	}
 
 	

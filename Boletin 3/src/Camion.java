@@ -25,7 +25,13 @@ public class Camion extends Vehiculo {
 		
 		public void mostrarDatos() {
 			System.out.println("Altura:"+ altura);
-			System.out.println(remolque.toString());
+			System.out.println(remolque);
+			super.mostrarDatos();
+		}
+		
+		public Camion(String matricula, String tipo, int velocidadMaxima, int altura) {
+			super(matricula, tipo, velocidadMaxima);
+			this.altura=altura;
 		}
 	}
 
