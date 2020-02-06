@@ -8,13 +8,20 @@ public class Rectangulo extends Cuadrado{
 				
 	}
 
-	protected void calcularArea() {
+	public void calcularArea() {
 		area=base*super.lado;
 	}
 	@Override
 	public String toString() {
 		
-		return String.format("RECTANGULO\nBase:%d\n Altura:%d\n Area:%d", base,lado,area);
+		return String.format("RECTANGULO\nBase:%d\n Altura:%d\n Area:%d\nPerimetro:%d", base,lado,area,perimetro);
+	}
+	@Override
+	public void calcularPerimetro() {
+		perimetro = super.lado *2 + base*2;
+	}
+	public void imprimirDatosFigura() {
+		System.out.println(this.toString());
 	}
 
 }

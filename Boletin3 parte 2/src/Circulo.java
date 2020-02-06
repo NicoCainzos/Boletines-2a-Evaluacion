@@ -14,14 +14,21 @@ public class Circulo extends Figura {
 		this.radio=radio;
 	}
 	@Override
-	protected void calcularArea() {
+	public void calcularArea() {
 		area = (int) (PI*Math.pow(radio,2));
 		
 	}
 	@Override
 	public String toString() {
 		
-		return String.format("CIRCULO\nRadio:%d\nArea:%d",radio,area);
+		return String.format("CIRCULO\nRadio:%d\nArea:%d\nPerimetro:%d",radio,area,perimetro);
+	}
+	@Override
+	public void calcularPerimetro() {
+		perimetro = (int) (2 * PI * radio);
+	}
+	public void imprimirDatosFigura() {
+		System.out.println(this.toString());
 	}
 
 }

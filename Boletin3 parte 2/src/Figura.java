@@ -1,6 +1,7 @@
 
-public abstract class Figura {
+public abstract class Figura implements ICalculosFigura, IImpresionFigura{
 	protected int area;
+	protected int perimetro;
 	
 	public int getArea() {
 		return area;
@@ -8,14 +9,19 @@ public abstract class Figura {
 	public void setArea(int area) {
 		this.area=area;
 	}
-	
-	protected abstract void calcularArea();
-	
+	public int getPerimetro() {
+		return perimetro;
+	}
+	public void setPerimetro(int perimetro) {
+		this.perimetro=perimetro;
+	}
 		
-	protected void imprimirArea() {
+	public void imprimirArea() {
 		System.out.printf("Area:%d \n",area);
 	
 	}
+	public void imprimirPerimetro() {
+		System.out.printf("Perimetro:%d\n,area");
+	}
 	
-
 }

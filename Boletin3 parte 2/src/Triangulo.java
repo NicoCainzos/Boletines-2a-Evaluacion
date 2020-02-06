@@ -22,14 +22,21 @@ public class Triangulo extends Figura {
 		this.altura=altura;
 	}
 	@Override
-	protected void calcularArea() {
+	public void calcularArea() {
 		area=(int) (base * altura / 2.0);
 		
 	}
 	@Override
 	public String toString() {
 		
-		return String.format("TRIANGULO\nBase:%d\n Altura:%d\n Area:%d", base,altura,area);
+		return String.format("TRIANGULO\nBase:%d\n Altura:%d\n Area:%d\nPerimetro:%d", base,altura,area,perimetro);
+	}
+	@Override
+	public void calcularPerimetro() {
+		perimetro = base * 3;
+	}
+	public void imprimirDatosFigura() {
+		System.out.println(this.toString());
 	}
 
 }

@@ -13,14 +13,21 @@ public class Cuadrado extends Figura {
 		this.lado=lado;
 	}
 	@Override
-	protected void calcularArea() {
+	public final void calcularArea() {
 		area = lado*lado;
 		
 	}
 	@Override
 	public String toString() {
 		
-		return String.format("CUADRADO\nLado:%d\nArea:%d", lado,area);
+		return String.format("CUADRADO\nLado:%d\nArea:%d\nParimetro:%d", lado,area,perimetro);
+	}
+	@Override
+	public void calcularPerimetro(){
+		perimetro = lado * 4;
+	}
+	public void imprimirDatosFigura() {
+		System.out.println(this.toString());
 	}
 
 }
