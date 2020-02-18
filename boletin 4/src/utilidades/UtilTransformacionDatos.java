@@ -10,10 +10,6 @@ public class UtilTransformacionDatos {
 
 		catch(NumberFormatException ex) {
 			return false;
-		}
-		
-		
+		}	
 	}
-
-
 }
