@@ -21,10 +21,25 @@ public class mainBoletin4 {
 		try {
 			int numero=2;
 			int num=UtilObtencionDatos.obtenerValorNumerico(numero);
+		
 		}
 		catch(ValorNumericoNegativoException ex){
 			System.out.println(ex.getMessage());
 		}
+		
+		try {
+		Usuario u1 = new Usuario("luis8","000000");
+		Usuario persona = UtilLogueo.realizarLogin(u1);
+		System.out.println("Encontró");
+		}
+		catch(LoginUsuarioNoExistente ex){
+			System.out.println(ex.getMessage());
+		}
+		catch(LoginUsuarioPassErroneo exc){
+			System.out.println(exc.getMessage());
+		}
+		
+		
 			
 		
 		
