@@ -19,5 +19,10 @@ public class Persona {
 
 	public int getEdad() {
 		return edad;
-	}// getEdad
+	}
+	public String toString(){
+		String mensaje=nombre + apellidos + edad;
+		return mensaje;
+	}
+	// getEdad
 }// class
