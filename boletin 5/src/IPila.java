@@ -1,8 +1,8 @@
 
 public interface IPila {
-	public void apilar();
-	public void desapilar();
-	public void cima();
+	public void apilar(Object a);
+	public void desapilar(Object a);
+	public void cima(Object a);
 	
 
 }

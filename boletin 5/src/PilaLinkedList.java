@@ -1,15 +1,16 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 
-public  class PilaArrayList implements IPila {
-	public ArrayList<Object> pila;
+public class PilaLinkedList implements IPila {
+	public LinkedList<Object> pila;
 	
-	public PilaArrayList() {
-		pila=new ArrayList<Object>();
+	public PilaLinkedList() {
+		pila=new LinkedList<Object>();
 	}
 
 	@Override
 	public void apilar(Object a) {
-		pila.add(a);
+		
 		
 	}
 
