@@ -10,18 +10,20 @@ public class PilaLinkedList implements IPila {
 
 	@Override
 	public void apilar(Object a) {
+		pila.add(a);
+		
+	}
+
+	@Override
+	public Object desapilar() {
+		return pila.pollLast();
 		
 		
 	}
 
 	@Override
-	public void desapilar(Object a) {
-		
-		
-	}
-
-	@Override
-	public void cima(Object a) {
+	public Object cima() {
+		return pila.getLast();
 		
 		
 	}

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public  class PilaArrayList implements IPila {
 	public ArrayList<Object> pila;
@@ -14,13 +15,14 @@ public  class PilaArrayList implements IPila {
 	}
 
 	@Override
-	public void desapilar(Object a) {
-		
+	public Object desapilar() {
+		return pila.remove(pila.size()-1);
 		
 	}
 
 	@Override
-	public void cima(Object a) {
+	public Object cima() {
+		return pila.get(pila.size()-1);
 		
 		
 	}
